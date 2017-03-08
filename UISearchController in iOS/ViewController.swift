@@ -32,6 +32,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        searchController.searchBar.placeholder = "Busqueda"
+        searchController.searchBar.prompt = "Titulo"
         searchController.searchResultsUpdater = self
         table.tableHeaderView = searchController.searchBar
         
